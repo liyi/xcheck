@@ -1,0 +1,30 @@
+{
+  "name": "xcheck",
+  "version": "0.0.1",
+  "description": "a validator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liyi/xcheck.git"
+  },
+  "files": ["dist/"],
+  "main": "dist/xcheck.js",
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "dev": "rollup --watch --config rollup.config.js",
+    "docs:build": "vuepress build docs_src",
+    "docs:dev": "vuepress dev docs_src",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "liyi",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.4",
+    "jest": "^25.1.0",
+    "rollup": "^1.31.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-uglify": "^6.0.4",
+    "vuepress": "^1.3.1"
+  }
+}
